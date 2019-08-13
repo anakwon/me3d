@@ -1,0 +1,431 @@
+.textarea,input.text,input[type="text"],input[type="button"],input[type="submit"],input-checkbox {
+-webkit-appearance: none;
+border-radius: 0;
+}
+
+
+.select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: .5em;
+    background: #efefef;
+    border: none;
+    border-radius: 3px;
+    padding: 1em 2em 1em 1em;
+    font-size: 1em;
+}
+.select-container {position:relative; display: inline;}
+.select-container:after {content:""; width:0; height:0; position:absolute; pointer-events: none;}
+.select-container:after {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: .3em;
+    right: .75em;
+    border-top: 8px solid black;
+    opacity: 0.5;
+}
+.select::-ms-expand {
+    display: none;
+}
+
+
+.qty-change {
+    width:35px;
+    height:35px;
+    line-height:0px;
+    border: 2px solid #eaeaea;
+    border-radius: 50%;
+    color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    background: #ffffff;
+    box-shadow: 0 0 3px gray;
+    font-size:20px;
+    font-weight:bold;
+    padding: 0px;
+}
+.qty-change:hover {
+    background: #eaeaea;
+}
+
+
+.subtotal {
+    text-align: right;
+    font-size: 18pt;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+.vl {
+  border-left: 1px solid #e2e2e2;
+  height: 450px;
+}
+
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+.color-dots {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #eaeaea;
+  margin: 5px;
+}
+
+.color-dots.selected {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 5px solid #000000;
+  margin: 5px;
+}
+
+
+.size-ring-number{
+  z-index: 20; 
+  font-size: 44px;
+  top:5px;
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 100px; /* Need a specific value to work */
+}
+
+.size-ring-text{
+  z-index: 20; 
+  font-size: 14px; 
+  top:60px;
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 100px; /* Need a specific value to work */
+}
+
+.size-ring{
+  height: 100px; 
+  text-align: center;
+  top:0px;
+  position: relative;
+}
+
+
+
+
+.ribbon {
+  height: 188px;
+  position: relative;
+  margin-bottom: 30px;
+  /* background: url(https://html5book.ru/wp-content/uploads/2015/10/snow-road.jpg);  */
+  background-size: cover;
+  text-transform: uppercase;
+  color: white;
+}
+
+
+.wrap {
+  width: 100%;
+  /* height: 188px; */
+  position: absolute;
+  top: -8px;
+  left: 8px;
+  overflow: hidden;
+    border-style: solid;
+  border-width: 1px;
+    border-color: #eaeaea;
+}
+
+
+.wrap .shop-cat
+{
+  font-size: 12pt;
+    padding-top: 5px;
+    text-align: center;
+    color:#000000; 
+}
+
+
+
+
+
+/*  Not sue the wrap around for custom flag
+
+.wrap:before, .wrap:after {
+  content: ""; 
+  position: absolute;
+}
+.wrap:before {
+  width: 40px;
+  height: 8px;
+  right: 100px;
+  background: #252128;
+  border-radius: 8px 8px 0px 0px;
+}
+.wrap:after {
+  width: 8px;
+  height: 40px;
+  right: 0px;
+  top: 100px;
+  background: #252128;
+  border-radius: 0px 8px 8px 0px;
+}
+*/
+
+
+.ribbon6 {
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  top: 30px;
+  right: -50px;
+  z-index: 2;
+  overflow: hidden;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border: 1px dashed;
+  box-shadow:0 0 0 3px #ff4d00,  0px 21px 5px -18px rgba(0,0,0,0.6);
+  background: #ff4d00;
+  text-align: center;
+}
+
+
+
+.nav.nav-tabs {
+    float: right;
+    display: block;
+    margin-right: 20px;
+    border-bottom:0;
+    border-right: 1px solid #ddd; 
+    padding-right: 15px;
+    font-size: 1.3em;
+}
+.nav-tabs .nav-link {
+    border: 0px solid transparent;
+    padding: 20px;
+}
+
+.nav-tabs .nav-link.active {
+    /* color: #495057;
+    background-color:#007bff !important;
+    border-color: transparent !important; */
+    color: #ff4d00;
+    text-decoration:underline;
+}
+.nav-tabs .nav-link {
+    /* border: 1px solid transparent;
+    border-top-left-radius: 0rem!important;
+    border-top-right-radius: 0rem!important; */
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.tab-content>.active {
+    display: block;
+    /* background: #007bff; */
+    min-height: 165px;
+}
+.nav.nav-tabs {
+    float: left;
+    display: block;
+    margin-right: 20px;
+    border-bottom: 0;
+    /* border-right: 1px solid transparent; */
+    padding-right: 15px;
+}
+
+
+
+
+
+
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #EAEAEA; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #ff4d00; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #e2e2e2; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #EAEAEA; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+    height: 20px;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0px;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+
+
+
+
+
+.items {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  counter-reset: done-items undone-items;
+}
+
+h2 {
+  position: relative;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 1.2em;
+  font-family: "Scandia-Regular";
+}
+
+h2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: -20px;
+  width: 5px;
+  background-color: #ff4d00;
+}
+
+h2::after {
+  display: block;
+  float: right;
+  font-weight: normal;
+}
+
+.done {
+  order: 1;
+}
+
+.done::after {
+  content: ' (' counter(done-items) ')'; /* to hide counter */
+}
+
+.undone{
+  order: 3;
+}
+
+.undone::after {
+  content: ' (' counter(undone-items) ')'; /* to hide counter */
+}
+
+/* hide inputs offscreen, but at the same vertical positions as the correpsonding labels, so that tabbing scrolls the viewport as expected */
+input[title=brands] {
+  display: block;
+  height: 53px;
+margin: 0 0 -53px -9999px;   /* This can cause issues with other form fileds on same page */
+  order: 4;
+  outline: none;
+  counter-increment: undone-items;
+}
+
+input[title=brands]:checked {
+  order: 2;
+  counter-increment: done-items;  
+}
+
+label[title=brands] {
+  display: block;
+  position: relative;
+  padding: 10px 0 15px 45px;
+  border-top: 1px dashed #fff;
+  order: 4;
+  cursor: pointer;
+  animation: undone .5s;
+}
+
+label[title=brands]::before {
+  content: '\f0c8'; /* circle outline */
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  font: 1.5em;
+  font-family: "Font Awesome 5 Free"; 
+}
+
+label:hover, input:focus + label {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+input[title=brands]:checked + label {
+  order: 2;
+  animation: done 1s;
+}
+
+input[title=brands]:checked + label::before {
+  content: '\f14a'; /* circle checkmark */
+}
+
+@keyframes done {
+  0% {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, .4);
+    transform: translateY(200px);
+  }
+  50% {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .4);
+  }
+}
+
+@keyframes undone {
+  0% {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, .4);
+    transform: translateY(-200px);
+  }
+  50% {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .4);
+  }
+}

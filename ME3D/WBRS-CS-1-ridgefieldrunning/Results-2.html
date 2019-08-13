@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pressure Insights</title>
+</head>
+
+<body>
+
+    <div class="container-fluid brand-header">
+        <div class="row">
+            <div class="col">
+                <img class="brand-logo">
+            </div>
+            <div class="col">
+                <!-- <h1>3D FOOT SCAN</h1> -->
+            </div>
+            <div class="col-auto text-right  d-flex align-top" style="color:#FFFFFF">
+                <h1 class="end_session"></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-sm-4 offset-sm-2 col-md-5 offset-md-2 ">
+                <h1>
+                    <a href="Results.html" style="color:white" id="measurementsHeader"></a>
+                </h1>
+            </div>
+            <div class="col-6 col-sm-4 col-md-5">
+                <h1>
+                    <a href="" style="color:white"><u id="pressureHeader"></u></a>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container-fluid justify-content-center align-items-top h-100 add-padding">
+
+        <div class="row justify-content-center align-items-top h-100">
+
+            <div class="col-12 col-lg-7">
+
+                <div class="swiper-container" id="pressureInsights">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <row class="row d-flex justify-content-center bd-highlight mb-3 align-items-center">
+                                <div class="col-2"><p class="fine-print">High</p><img class="img-fluid" src="images/pressure-range.png" id="pressureRange"
+                                    style="padding-bottom: 20px; max-height: 350px;">
+                                    <p class="fine-print">Low</p></div>
+                                <div class="col-10">
+                                <img src="images/Pressure-animated.png" style="max-height: 550px; width: auto; padding-top: 25px; padding-bottom: 25px"
+          class="img-fluid">
+                                </div>
+                            </row>
+                        </div>
+
+
+
+
+
+                        <div class="swiper-slide">
+                            <div class="" tabindex="-1" role="dialog" id="heelRotationModal">
+                                <div class="" role="document">
+                                    <div class="">
+
+                                        <div class="row Kinetic-header">
+                                            <div class="col ">
+                                                <h1 class="highlight-color" style="text-align:left; float:left;">Heel
+                                                    Rotation</h1>
+                                                <a class="close modal-close end_session cursor-pointer"
+                                                    data-slide-to="0" aria-label="Close"
+                                                    style="text-align:right;float:right;"><span>&times;</span></a>
+                                            </div>
+                                            <div id="heelRotationMeasurement" class="col-12">
+                                                <p class="lineHighlight">L:<span
+                                                        class="highlight-color lineText">MEDIUM</span><span> R:
+                                                    </span>
+                                                    <span class="highlight-color lineText">MEDIUM</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container mt-3">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p class="shop-summary">Your heel moves up, down, side to side
+                                                            and rotates as you move. An approximation of how far your
+                                                            heel moves is indicated by High, Medium or Low. Our analysis
+                                                            depicts a relative range of motion through your gait cycle
+                                                            (walk).</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <img class="w-100" src="images/pressure-heel-rotation.png">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <p class="shop-summary">A premium insole can help disperse
+                                                            pressure to improve your comfort and help you maintain your
+                                                            Preferred Movement Path.</p>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                        <div class="swiper-slide">
+                            <div class="" tabindex="-1" role="dialog" id="pressurePatternModal">
+                                <div class="" role="document">
+                                    <div class="">
+
+                                        <div class="row Kinetic-header">
+                                            <h1 class="highlight-color" style="text-align:left; float:left;">Pressure
+                                                Pattern</h1>
+                                            <a class="close modal-close end_session cursor-pointer" data-slide-to="0"
+                                                aria-label="Close"
+                                                style="text-align:right;float:right;"><span>&times;</span></a>
+                                            <div class="col-12">
+                                                <p id="pressurePatternMeasurement" class="lineHighlight">L:<span
+                                                        class="highlight-color lineText">NEUTRAL</span><span> R:
+                                                        <span class="highlight-color lineText ">PRONATION</span></span>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <div class="container mt-3">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <p class="shop-summary">Describes how the majority of pressure
+                                                            distributes across the bottom of your feet as you move.</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-2"><img src="images/pressure-pattern-supination.png"
+                                                            style="max-height: 120px"></div>
+                                                    <div class="col-10">
+                                                        <p class="shop-summary">
+                                                            <p class="shop-summary">SUPINATION (Lateral Pressure)<br>
+                                                                Pressure from the outside to the midline of the foot.
+                                                                Neutral shoe preferred.</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-2"><img src="images/pressure-pattern-neutral.png"
+                                                            style="max-height: 120px"></div>
+                                                    <div class="col-10">
+                                                        <p class="shop-summary">
+                                                            <p class="shop-summary">NEUTRAL(Balanced Pressure)<br>
+                                                                Pressure pattern that is more evenly distributed around
+                                                                the midline of the foot. Neutral shoe preferred.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-2"><img src="images/pressure-pattern-pronation.png"
+                                                            style="max-height: 120px"></div>
+                                                    <div class="col-10">
+                                                        <p class="shop-summary">
+                                                            <p class="shop-summary">PRONATION (Medial Pressure)<br>
+                                                                Pressure from the inside to the midline of the foot.<br>
+                                                                Stability shoe preferred.<br> Plus, add a premium insole
+                                                                to help redistribute pressure from the medial side of
+                                                                your foot.</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="swiper-slide">
+                            <div class="" tabindex="-1" role="dialog" id="propulsionEffortModal">
+                                <div class="" role="document">
+                                    <div class="">
+                                        <div class="row Kinetic-header">
+                                            <h1 class="modal-title highlight-color">Propulsion Effort</h1>
+                                            <a class="close modal-close end_session cursor-pointer" data-slide-to="0"
+                                                aria-label="Close"
+                                                style="text-align:right;float:right;"><span>&times;</span></a>
+                                            <div class="col-12">
+                                                <p id="propulsionEffortMeasurement" class="lineHighlight">L:<span
+                                                        class="highlight-color lineText">LOW</span>
+                                                    R:<span class="highlight-color lineText">HIGH</span></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <div class="container mt-3">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <img src="images/pressure-propulsion-effort.png"
+                                                            style="max-height: 150px;" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <p class="shop-summary">The amount of effort it takes to propel
+                                                            your body forward.</p>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <img src="images/pressure-propulsion-high.png"
+                                                            style="max-height: 150px;" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <p class="shop-summary">HIGH<br>
+                                                            When your big toe is stiffer your body does more work to
+                                                            keep you moving. Add a premium insole to decrease your
+                                                            dynamic stiffness and reduce the amount of work your body is
+                                                            doing as you move.</p>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <img src="images/pressure-propulsion-low.png"
+                                                            style="max-height: 150px;" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <p class="shop-summary">LOW<br> When your big toe is flexible
+                                                            your body does less work to keep you moving. A premium
+                                                            insole will help you maintain this lower stiffness and help
+                                                            prevent fatigue.</p>
+                                                    </div>
+                                                </div>
+
+
+
+
+
+
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="swiper-slide">
+                            <div class="" tabindex="-1" role="dialog" id="dynamicKneeVariationModal">
+                                <div class="" role="document">
+                                    <div class="">
+                                        <div class="row Kinetic-header">
+                                            <h1 class="modal-title highlight-color">Dynamic Knee Variation</h1>
+                                            <a class="close modal-close end_session cursor-pointer" data-slide-to="0"
+                                                aria-label="Close"
+                                                style="text-align:right;float:right;"><span>&times;</span></a>
+                                            <div class="col-12">
+                                                <p id="dynamicKneeVariationMeasurement" class="lineHighlight">
+                                                    L: <span class="highlight-color lineText">LOW</span> R: <span
+                                                        class="highlight-color lineText">LOW</span></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <div class="container mt-3">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <img src="images/pressure-dynamic-knee-variation.png"
+                                                            style="max-height: 350px" class="img-fluid">
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <p class="shop-summary">An estimation of the loading your knee
+                                                            experiences while you move.</p>
+                                                        <p class="shop-summary">HIGH<br> You display a higher
+                                                            probability of increased relative stress as you move. A
+                                                            premium insole may help reduce the loading your knee
+                                                            experiences as you move.</p>
+                                                        <p class="shop-summary">LOW<br> Your knee displays a lower
+                                                            probability of increased relative stress as you move. You
+                                                            may need less help maintaining your preferred movement
+                                                            pathway.</p>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons <div class="swiper-pagination"></div> -->
+
+
+                    <!-- If we need scrollbar 
+                    <div class="swiper-scrollbar"></div>   If we need scrollbar -->
+                </div>
+                <div class="swiper-button-prev" id="backArrow"></div>
+                <div class="swiper-button-next" id="forwardArrow"></div>
+
+
+
+
+
+
+
+            </div>
+            <div class="col col-lg-5">
+
+
+                <div id="pressureList">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-12 ">
+                            <div class="col">
+                                <p class="lineTextHeader">Heel Rotation</p>
+                            </div>
+                            <div class="col">
+                                <div class="row lineHighlight align-items-center rowHeight cursor-pointer"
+                                    id="heelRotation">
+
+                                    <div class="col-5 ">
+                                        <span class="lineText">L: <span class="highlight-color">MEDIUM</span>
+                                        </span>
+
+                                    </div>
+                                    <div class="col-5">
+                                        <span class="lineText">R: <span class="highlight-color">MEDIUM</span></span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span><img src="images/arrow-link.png" class="img-fluid"
+                                                style="max-width: 10px; float: right;"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-12" id="pressureCol">
+                            <div class="col">
+                                <p class="lineTextHeader">Pressure Pattern</p>
+                            </div>
+                            <div class="col">
+                                <div class="row lineHighlight align-items-center rowHeight cursor-pointer"
+                                    id="pressurePattern">
+
+                                    <div class="col-5 ">
+                                        <span class="lineText">L: <span class="highlight-color">PRONATION</span>
+                                        </span>
+
+                                    </div>
+                                    <div class="col-5">
+                                        <span class="lineText">R: <span class="highlight-color">NEUTRAL</span></span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span><img src="images/arrow-link.png" class="img-fluid"
+                                                style="max-width: 10px; float: right;"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-12 add-padding">
+                            <div class="col">
+                                <p class="lineTextHeader">Propulsion Effort</p>
+                            </div>
+                            <div class="col">
+                                <div class="row lineHighlight align-items-center rowHeight cursor-pointer"
+                                    id="propulsionEffort">
+
+                                    <div class="col-5 ">
+                                        <span class="lineText">L: <span class="highlight-color">HIGH</span>
+                                        </span>
+
+                                    </div>
+                                    <div class="col-5">
+                                        <span class="lineText">R: <span class="highlight-color">LOW</span></span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span><img src="images/arrow-link.png" class="img-fluid"
+                                                style="max-width: 10px; float: right;"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-12 add-padding">
+                            <div class="col">
+                                <p class="lineTextHeader">Dynamic Knee Variation</p>
+                            </div>
+                            <div class="col">
+                                <div class="row lineHighlight align-items-center rowHeight cursor-pointer"
+                                    id="dynamicKneeVariation">
+
+                                    <div class="col-5 ">
+                                        <span class="lineText">L: <span class="highlight-color">LOW</span>
+                                        </span>
+
+                                    </div>
+                                    <div class="col-5">
+                                        <span class="lineText">R: <span class="highlight-color">HIGH</span></span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span><img src="images/arrow-link.png" class="img-fluid"
+                                                style="max-width: 10px; float: right;"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<div class="col-12 add-padding">&nbsp;<br><br></div>
+    
+    <div class=" container-fluid fixed-bottom logo-nav">
+        <div class="row">
+            <div class="col">
+                <img src="images/FS-symbol-black-blue.png" style="max-height: 40px;">
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col-auto text-right  d-flex align-items-center" style="top:-5px">
+          <p class="continue desktop">Need to rescan? <a href="get-started.html">Start Over</a></p><p class="continue mobile"><a href="get-started.html">RESCAN</a></p>&nbsp;&nbsp;
+                <a href="register.html"><input class="cta main-cta" type="submit" value="SAVE PROFILE"></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script>
+        // var galleryThumbs = new Swiper('.gallery-thumbs', {
+        //   spaceBetween: 10,
+        //   slidesPerView: 5,
+        //   freeMode: true,
+        //   watchSlidesVisibility: true,
+        //   watchSlidesProgress: true,
+        // });
+        $(window).resize(function () {
+            if ($(this).width() < 991) {
+                $("#pressureCol").removeClass("add-padding")
+            } else {
+                $("#pressureCol").addClass("add-padding")
+
+            }
+        })
+
+        $(function () {
+
+
+            if ($(window).width() < 991) {
+                $("#pressureCol").removeClass("add-padding")
+            } else {
+                $("#pressureCol").addClass("add-padding")
+
+            }
+
+        });
+
+
+
+
+        $('.close').click(galleryTop, function () {
+            galleryTop.slideTo(1);
+        })
+        $('#heelRotation').click(galleryTop, function () {
+            galleryTop.slideTo(2);
+        })
+        $('#pressurePattern').click(galleryTop, function () {
+            galleryTop.slideTo(3);
+        })
+        $('#propulsionEffort').click(galleryTop, function () {
+            galleryTop.slideTo(4);
+        })
+        $('#dynamicKneeVariation').click(galleryTop, function () {
+            galleryTop.slideTo(5);
+        })
+        var galleryTop = new Swiper('.swiper-container', {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            loop: true
+        });
+        galleryTop.on('slideChange', function () {
+        switch(galleryTop.activeIndex){
+                case 6:
+                case 1:
+                $('#heelRotation').css("background-color","#F8F8F8");
+                $('#pressurePattern').css("background-color","#F8F8F8")
+                $('#propulsionEffort').css("background-color","#F8F8F8")
+                $('#dynamicKneeVariation').css("background-color","#F8F8F8")
+                  break;
+                case 2:
+                $('#heelRotation').css("background-color","#e2e2e2");
+                $('#pressurePattern').css("background-color","#F8F8F8")
+                $('#propulsionEffort').css("background-color","#F8F8F8")
+                $('#dynamicKneeVariation').css("background-color","#F8F8F8")
+                break;
+                case 3:
+                $('#heelRotation').css("background-color","#F8F8F8");
+                $('#pressurePattern').css("background-color","#e2e2e2")
+                $('#propulsionEffort').css("background-color","#F8F8F8")
+                $('#dynamicKneeVariation').css("background-color","#F8F8F8")
+                break;
+                case 4:
+                $('#heelRotation').css("background-color","#F8F8F8");
+                $('#pressurePattern').css("background-color","#F8F8F8")
+                $('#propulsionEffort').css("background-color","#e2e2e2")
+                $('#dynamicKneeVariation').css("background-color","#F8F8F8")
+                break;
+                case 5:
+                $('#heelRotation').css("background-color","#F8F8F8");
+                $('#pressurePattern').css("background-color","#F8F8F8")
+                $('#propulsionEffort').css("background-color","#F8F8F8")
+                $('#dynamicKneeVariation').css("background-color","#e2e2e2")
+                break;
+            }
+        })
+    </script>
+</body>
+
+</html>

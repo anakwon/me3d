@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    <title>Measurements</title>
+</head>
+
+<body id=footMeasurements>
+    
+    <div class="container-fluid brand-header">
+        <div class="row">
+          <div class="col">
+            <img class="brand-logo">
+          </div>
+          <div class ="col">
+            <!-- <h1>3D FOOT SCAN</h1> -->
+          </div>
+          <div class="col-auto text-right  d-flex align-top" style="color:#FFFFFF">
+           <h1 class="end_session"></h1>
+          </div>
+        </div>
+        <div class="row ">
+           <div class ="col-6 col-sm-4 offset-sm-2 col-md-5 offset-md-2 ">
+                <h1>
+                <a href="Results.html" style="color:white"><span class="desktop"></span><u id="measurementsHeader"></u></a>
+               </h1>
+              </div>
+              <div class ="col-6 col-sm-4 col-md-5">
+                  <h1 >
+                   <a href="Results-2.html"  style="color:white" id="pressureHeader"></a>
+                  </h1>
+                 </div>
+         </div>
+    </div>
+
+
+
+    <div class="container-fluid justify-content-center align-items-center mt-3">
+            <div class="row" id="smallScreen" >
+
+                <div class="col-6 text-center" >
+                     <a class="plain-link cursor-pointer" data-toggle="modal" data-target="#shoeSizeModal"><span class="shop-nav">Men's Shoe Size &nbsp;<img src="images/arrow-link.png" class="img-fluid" style="max-width: 10px;"></span></a>                                
+                </div>
+                <div class="col text-center" >
+                    <span class="shop-nav">Left: <span class="highlight-color">10.5</span>   Right: <span class="highlight-color">11</span> </span><span class="fine-print">(US Men's estimated size)</span>
+                </div>
+                </div>
+       
+        <div class="row">
+ 
+            
+<div class="row col-lg-9">
+    
+  <div class="col-1 offset-5 col-md-1 offset-md-1 justify-content-center  d-flex align-items-center">
+                    <img class="img-fluid" src="images/360-icon.png" style="max-height: 30px;" data-target="#carouselExampleIndicators" data-slide-to="0" id="360Image">
+                    <div class="swiper-button-prev" id="backArrow" style="display:none"></div>
+                
+  </div>
+            
+   <div class="col-12 col-md-9 justify-content-center  d-flex align-items-center">
+                <div class="swiper-container measurementsCarousel" >
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img class="w-100" src="images/your-feet-360.png" alt="Your Feet"></div>
+                      <div class="swiper-slide"><img class="w-100" src="images/foot-measurements.png" alt="How we measure"></div>
+                    </div>
+                    <!-- Add Pagination
+                    <div class="swiper-pagination"></div> -->
+                    
+                  </div>
+   </div>
+            
+  <div class="col-12 col-md-1  offset-md-0  justify-content-center  d-flex align-items-center">
+                <div class="swiper-button-next" id="switchMeasurements"></div>
+                <!-- <img data-target="#carouselExampleIndicators" data-slide-to="1" class="arrow" src="arrow.PNG" class="img-fluid" id="switchMeasurements">  -->
+  </div>
+    
+</div>
+            
+            
+            
+            
+            
+<div class="col col-lg-3">
+        
+                
+                
+              <div id="largeScreen">
+                <div class="col-6 col-lg-12 text-center">
+                    <a class="plain-link cursor-pointer" data-toggle="modal" data-target="#shoeSizeModal"><span class="shop-nav">Men's Shoe Size &nbsp;<img src="images/arrow-link.png" class="img-fluid" style="max-width: 10px;"></span></a>        
+                    
+                                
+                </div>
+                <div class="col col-lg-12 text-center">
+                    <p>Left :<span class="highlight-color">10.5</span> Right: <span class="highlight-color">11</span><br><span class="fine-print">(US Men's estimated size)</span>
+                        </p>
+                </div>
+                </div>
+                
+                <div class="container">
+                    <div class="row justify-content-center  d-flex align-items-center">
+                        <div class="col-12 justify-content-center  d-flex align-items-center">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class=" btn btn-outline-secondary badge-pill pill-button active"><span class="toggle-nav">IMPERIAL</span></button>
+                                <button type="button" class="btn btn-outline-secondary badge-pill pill-button"><a href="#" class="toggle-nav">METRIC</a></button>
+                                        </div>
+                            </div>
+                </div>
+                </div>
+
+                <div class="row add-padding">
+                  
+                    <div class="col-6 col-lg-12 order-1 order-lg-1 add">
+                        <p class="lineText">LENGTH</p>
+                    </div>
+                    <div class="col-6 col-lg-12 order-2 order-lg-3">
+                    <p class="lineText">L: <span class="highlight-color">8.62"</span>&nbsp; R: <span class="highlight-color">8.81"</span>
+                        <span class="fine-print"><nobr>(.44" difference)</nobr></span></p>
+                    </div>
+                    <div class="col-6 col-lg-12 order-3 order-lg-3 pt-lg-0">
+                    <p class="lineText">WIDTH</p>
+                    </div>
+                    <div class="col-6 col-lg-12 order-4 order-lg-4">
+                    <p class="lineText">L: <span class="highlight-color">3.52</span>&nbsp;  R: <span class="highlight-color">3.96</span></p>
+                    </div>
+                    <div class="col-6 col-lg-12 order-5 order-lg-5">
+                    <p class="lineText">ARCH HEIGHT</p>
+                    </div>
+                    <div class="col-6  col-lg-12 order-6 order-lg-6">
+                    <p class="lineText">L: <span class="highlight-color">Normal</span>&nbsp;  R: <span class="highlight-color">High</span></p>
+                    </div>
+                    <div class="col-6 col-lg-12 order-7 order-lg-7">
+                    <p class="lineText">ARCH LENGTH</p>
+                    </div>
+                    <div class="col-6 col-lg-12 order-8 order-lg-8">
+                   <p class="lineText"> L: <span class="highlight-color">7.4"</span>&nbsp;  R: <span class="highlight-color">7.3"</span></p>
+                </div>
+                </div>
+                </div>
+
+            </div>
+        
+        </div>
+    <div class="col-12 add-padding">&nbsp;<br></div>
+        
+
+  <div class=" container-fluid fixed-bottom logo-nav">
+    <div class="row ">
+      <div class="col">
+        <img src="images/FS-symbol-black-blue.png" style="max-height: 40px;">
+      </div>
+      <div class="col">
+
+      </div>
+      <div class="col-auto text-right  d-flex align-items-center" style="top:-5px">
+          <p class="continue desktop">Need to rescan? <a href="get-started.html">Start Over</a></p><p class="continue mobile"><a href="get-started.html">RESCAN</a></p>&nbsp;&nbsp;
+        <a href="register.html"><input class="cta main-cta" type="submit" value="SAVE PROFILE"></a>
+      </div>
+    </div>
+  </div>
+    
+    
+    
+    
+
+    
+<!-- Modal RUN Pain Relief Enhanced -->
+<div class="modal fade" id="shoeSizeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-body" role="document">
+    <div class="modal-content">
+      <div class="modal-header"><h2>Shoe Preferences</h2>
+        <a class="modal-close" data-dismiss="modal" aria-label="Close">
+          <span>&times;</span>
+        </a>
+      </div>
+      <div class="modal-body">
+        <div class="col-12 justify-content-center align-items-center"> 
+                
+              <p class="directions add-padding">What type of shoe do you prefer?</p> 
+                
+                <span>            
+                    <div class="row cta-group add-padding" role="group">
+                        <div class="col-6 col-md-3 text-center add-padding">
+                        <button type="button" class="cta button second-cta " type="submit" value="MEN'S">MEN'S</button>
+                        </div>
+                        <div class="col-6 col-md-3 text-center add-padding">
+                        <button type="button" class="cta button link-cta">WOMEN'S</button>
+                        </div>
+                        <div class="col-6 col-md-3 text-center add-padding">
+                        <button type="button" class="cta button link-cta">BOY'S</button>
+                        </div>
+                        <div class="col-6 col-md-3 text-center add-padding">
+                        <button type="button" class="cta button link-cta">GIRL'S</button>
+                        </div>
+                    </div>
+
+                </span>
+            </div>
+                                        
+<span class="add-bt-padding">&nbsp;</span>
+           <p class="directions add-padding">Which measurement standard do you prefer?</p> 
+
+                                        <div class="col-12 justify-content-center  d-flex align-items-center add-padding">
+                                            <div class="form-group w-50 ">
+                                                    <select class="form-control fitstation-select">
+                                                      <option>US</option>
+                                                      <option>UK</option>
+                                                      <option>EU</option>
+                                                      <option>CM</option>
+                                                    </select>
+                                                  </div>
+                                                  </div>
+                                
+                                    <div class="col-12 justify-content-center  d-flex align-items-center mt-3">
+                                            <button type="button" class="cta main-cta" data-dismiss="modal">Save changes</button>
+                                        
+                                        <span class="add-bt-padding">&nbsp;</span>
+                                    </div>
+          </div>
+
+      </div>
+    </div>
+    </div>
+
+
+    
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+    
+    <script>
+      $(".button").click(function(){
+    $(".button").removeClass("second-cta").addClass("link-cta");
+    $(this).removeClass("link-cta").addClass("second-cta");
+    
+});
+            var galleryTop = new Swiper('.measurementsCarousel', {
+              spaceBetween: 10,
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              pagination: {
+                el: '.swiper-pagination',
+               },
+            });
+            galleryTop.on('slideChange', function () {
+
+
+            
+            if(galleryTop.activeIndex == 0){
+              $('#backArrow').css('display','none')
+              if($(window).width()>=768){
+                  $('#switchMeasurements').css('display','block')
+        }
+        $('#360Image').css('display','block');
+              
+            }else if(galleryTop.activeIndex == 1){
+              
+        $('#switchMeasurements').css('display','none')
+        if($(window).width()>=768){
+                  $('#backArrow').css('display','block')
+        }
+
+            $('#360Image').css('display','none');
+        
+
+            }
+          });
+          window.onload = function(){
+    if($(this).width()<=991){
+        $("#backArrow").css("display","none");
+        $("#switchMeasurements").css("display","none");
+        $("#smallScreen").show()
+        $("#largeScreen").css("display","none");
+
+    }else{
+        $("#smallScreen").hide()
+        $("#largeScreen").css("display","block");
+        
+
+    }
+
+}
+$(window).resize(function(){
+
+    if($(this).width()<=991){
+      
+        $("#backArrow").css("display","none");
+        $("#switchMeasurements").css("display","none");
+        $("#smallScreen").show()
+        $("#largeScreen").css("display","none");
+
+    }else{
+      if(galleryTop.activeIndex == 0){
+        $("#switchMeasurements").css("display","block");
+        $("#backArrow").css("display","none");
+      }else{
+        $("#backArrow").css("display","block");
+        $("#switchMeasurements").css("display","none");
+      }
+        $("#smallScreen").hide()
+        $("#largeScreen").css("display","block");
+        
+
+    }
+})
+          
+
+          </script>
+</body>
+
+</html>

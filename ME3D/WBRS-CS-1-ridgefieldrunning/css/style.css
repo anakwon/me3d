@@ -1,0 +1,920 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+
+/* @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"; */
+@import "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css";
+
+
+html, body {
+  overflow-x: hidden; 
+}
+
+
+.logo-nav{
+  background-color: white;
+}
+
+.brand-logo{
+  max-width: 200px;
+  height: auto;
+  content:url("../images/Ridgefield_Running-logo.png");
+}
+.brand-header {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  /* background-color:#0c2340; */
+ background-image: url("../images/brand-header-bk.png")
+} 
+
+.star{
+  max-width: 15px;
+  height: auto;
+  content:url("../images/star.png");
+}
+
+.star-rate{
+    font-size: 14pt;
+    color: #000000;
+    padding-bottom: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.star-rate-lg{
+    font-size: 22pt;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    padding-left: 25px;
+    padding-top: 5px;
+}
+
+
+.back-nav {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+
+
+
+.select-selected {
+  background-color: #ffffff;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #495057;
+    background-clip: padding-box;
+    border: 3px solid #E2E2E2;
+    border-radius: 0rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+input[type=text], textarea {
+  @include transition(all 0.30s ease-in-out);
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #eaeaea;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  @include box-shadow(0 0 5px rgba(81, 203, 238, 1));
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+
+
+.input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #E2E2E2;
+  border-radius: 0px;
+  resize: vertical;
+}
+
+
+
+select {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-padding-end: 20px;
+    -moz-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -moz-padding-start: 2px;
+    background-color: #ffffff; /* fallback color if gradients are not supported */
+    background-image: url(../images/arrow-menu.png), -webkit-linear-gradient(top, #ffffff, #ffffff); /* For Chrome and Safari */
+    background-image: url(../images/arrow-menu.png), -moz-linear-gradient(top, #ffffff, #ffffff); /* For old Fx (3.6 to 15) */
+    background-image: url(../images/arrow-menu.png), -ms-linear-gradient(top, #ffffff, #ffffff); /* For pre-releases of IE 10*/
+    background-image: url(../images/arrow-menu.png), -o-linear-gradient(top, #ffffff, #ffffff); /* For old Opera (11.1 to 12.0) */ 
+    background-image: url(../images/arrow-menu.png), linear-gradient(to bottom, #ffffff, #ffffff); /* Standard syntax; must be last */
+    background-position: center right;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    border-radius: 0px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    color: #555;
+    font-size: inherit;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.active-selection {
+    background-color: #e2e2e2;
+    outline-color: #495057;
+}
+
+
+.logo-space {
+    max-width: 250px;
+    height: auto;
+    padding: 20px;
+}
+
+
+.toggle-nav {
+  font-size: 10pt;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #000000;
+}
+
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active, .btn-outline-secondary:not(:disabled):not(.disabled):active, .show>.btn-outline-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #dee2e6;
+    border-color: #6c757d;
+}
+
+ .big-checkbox {
+     width: 20px; 
+     height: 20px;
+     padding-top: 10px;
+}
+
+
+.plain-link {
+    text-decoration: none;
+    color: #000000;     
+}
+
+.plain-link a:hover{
+    text-decoration: none;
+}
+
+.dimmed {
+    color: #eaeaea;
+}
+
+.shop-nav {
+  font-size: 12pt;
+    padding-top: 15px;
+}
+
+.shop-cat
+{
+  font-size: 12pt;
+    padding-top: 5px;
+    text-align: center;
+    color:#0c2340; 
+}
+
+.shop-summary
+{
+  font-size: 12pt;
+    text-align: left;
+}
+
+.padlr {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.shop-image {
+    width: auto;
+    height: 170px;
+}
+
+.shop-grid {
+    width: 200px;
+    height: 200px;
+    object-fit: scale-down;
+}
+
+.pressure-image {
+    width: auto;
+    max-height: 350px; 
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.fine-print
+{
+  font-size: 9pt;
+    padding-top: 5px;
+    text-align: center;
+}
+
+
+.modal-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 0px solid #dee2e6;
+}
+
+.Kinetic-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+}
+
+.modal-body {
+  margin:auto;
+  max-width:95%;
+}
+
+
+.modal-close {
+	cursor:pointer;
+    padding-right: 20px;
+    background-color: #ffffff;
+	color:#7d7e7f;
+	font-size:32px;
+	text-decoration:none;
+}
+
+.modal-close:hover {
+	color:#0DABED;
+}
+
+.modal-closen:active {
+	position:relative;
+	top:0px;
+}
+
+.modal-backdrop.show{background-color: white;}
+
+
+.grid-spaced {
+    padding-right: 25px;
+    padding-left: 25px;
+    
+}
+
+
+.product-name {
+    font-size: 34pt;
+    font-family: "Scandia-Regular";
+    margin-top: 0px;
+}
+
+.product-price {
+    font-size: 28pt;
+    
+    font-family: "Scandia-Regular";
+}
+
+.brand-title {
+    font-size: 18pt;
+    color: #000000;
+    font-family: "Scandia-Regular";
+    padding-top: 15px;
+}
+
+
+
+.add-padding {
+padding-top: 20px;
+}
+
+.add-bt-padding {
+padding-top: 300px;
+}
+
+
+
+p.mobile { display: none }
+@media (max-width: 640px) {
+    p.mobile { display: block }
+    p.desktop { display: none }
+}
+
+
+.continue {
+  font-size: 12pt;
+  padding-top: 20px;
+  padding-right: 10px;
+}
+
+
+
+.color-select {
+  text-align: center;
+}
+.color-select > p {
+  margin: 5px 5px;
+  padding: 0;
+}
+.color-select > li:hover {
+  cursor: pointer;
+}
+.color-select .selected img {
+  opacity: 1;
+  border-bottom-color: #000000;
+}
+.color-select img {
+  opacity: 0.5;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.color-select img:hover {
+  opacity: 1;
+}
+
+.color-grid {
+    width: 140px;
+    height: 100px;
+    object-fit: scale-down;    
+}
+
+.item > img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.top-gallery {
+  width: 600px;
+  height: 450px;
+}
+.gallery-thumbs .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+/* .gallery-thumbs {
+  width: 100px;
+  height: 50px;
+} */
+
+
+
+
+
+.cta {
+    width: 140px;
+    height: 50px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.cta.main-cta {
+    background-color:#ff4d00;
+    border: 1px solid #ff4d00;
+    color: #ffffff;
+    text-decoration: none;
+    z-index: 50;
+}
+
+.cta-disabled {
+    background-color:#ffffff;
+    border: 1px solid #eaeaea;
+    color: #eaeaea;
+    text-decoration: none;
+    z-index: 50;
+}
+
+.cta.second-cta {
+    color: #ff4d00;
+    background-color:#ffffff;
+    border: 1px solid #ff4d00;
+    outline-color: #ff4d00;
+    text-decoration: none;
+    z-index: 40;
+}
+
+.cta.link-cta {
+  background-color:#F4F4F4;
+    border-color: #ffffff;
+    outline-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border: none;
+    z-index: 30;
+    
+}
+
+
+
+
+
+.fixed-bottom {
+    background-color: #ffffff;
+}
+
+
+
+
+
+.directions {
+    font-size: 18pt;
+}
+
+.shopping-bag {
+    font-size: 14pt;
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+
+.box{
+    height:250px;
+    width:100%;
+  }
+
+  .list-group{
+    max-height: 300px;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.highlight-color {
+    color: #0DABED;
+}
+
+.lineHighlight {
+  background-color:#F8F8F8;
+  
+}
+
+.lineArrow{
+  height: 25px; 
+  float: right;
+  display:inline;
+}
+
+.arrow {
+  width:75%;
+  height:100px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color:#A6A8AA;
+  }
+  .carousel-indicators .active {
+    background-color: #0DABED;
+  }
+  /* .carousel{position:relative;margin-bottom:20px;line-height:1; height: 250px;} */
+  /* .carousel-inner{
+    margin-bottom: 30px;
+  } */
+
+
+
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.measurementsCarousel{
+/*      width:400px;
+      height:450px; */
+   max-width: 800px;    
+    }
+
+
+
+
+@font-face{
+  font-family: "Scandia-Regular";
+  src: url('Scandia-Regular.otf')
+}
+p{
+  font-family: "Scandia-Regular";
+}
+h5{
+  font-family: "Scandia-Regular";
+}
+
+h1{
+color:#FFFFFF;
+font-family: "Scandia-Regular";
+}
+
+.pill-button{
+  color: #dee2e6;
+  font-family: "Scandia-Regular";
+}
+
+
+.end_session:hover {
+  opacity: 1;
+}
+.end_session:before, .end_session:after {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color:white;
+}
+.end_session:before {
+  transform: rotate(45deg);
+}
+.end_session:after {
+  transform: rotate(-45deg);
+}
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+@media (min-width: 0px) { 
+    h1{
+        font-size: 14pt;
+    }
+    p{
+      font-size: 14pt;
+    }
+    .pill-button{
+      font-size: 14px; 
+    }
+    #fs-logo{
+      width:40px;
+    }
+    #brand-logo{
+      max-width: 200px;
+    }
+    .end_session:before, .end_session:after {
+      height: 20px;
+    }
+    .logo-position{
+      top: 5px;
+    }
+    #indicators{
+      visibility: visible;
+    }
+    #switchMeasurements{
+      display: none;
+    }
+    .rowHeight{
+      height:50px;
+    }
+
+.control-label {
+        text-align: left;
+    }    
+.directions {
+    font-size: 10pt;
+}
+    
+.continue {
+  font-size: 10pt;
+  padding-top: 20px;
+  padding-right: 15px;
+}
+
+.product-name {
+    font-size: 28pt;
+    font-family: "Scandia-Regular";
+    margin-top: 0px;
+}
+
+    .shoe-img-view{
+    height:250px;
+    }
+.shoe-carousel-img
+{
+    width: 400px;
+    height: 200px;
+    object-fit: scale-down;
+}
+.color-grid {
+    width: 80px;
+    height: 60px;
+    object-fit: scale-down;    
+}
+    
+.add-bt-padding {
+padding-top: 100px;
+}
+    
+ #measurementsHeader::before{
+        content:"MEASUREMENTS"
+ 
+ 
+    }
+    #pressureHeader::before{
+      content:"PRESSURE";
+      float: center;
+    }
+ 
+#propulsionEffortMeasurement{
+      display: block
+    }
+    #heelRotationMeasurement{
+      display: block
+    }
+    #pressurePatternMeasurement{
+      display: block
+    }
+    #dynamicKneeVariationMeasurement{
+      display: block
+    }
+    #backArrow{
+      display:none
+ 
+ 
+    }
+ 
+    #forwardArrow{
+      display:none
+    }
+
+    
+}
+
+
+
+
+@media (min-width: 575px) {
+  #measurementsHeader::before{
+    content:"3D MEASUREMENTS"
+  }
+  #pressureHeader::before{
+  content:"PRESSURE INSIGHTS"
+  }
+  .lineText{
+    font-size:9pt
+  }
+  .lineTextHeader{
+    font-size:12pt
+  }
+  #propulsionEffortMeasurement{
+    display: none
+  }
+  #heelRotationMeasurement{
+    display: none
+  }
+  #pressurePatternMeasurement{
+    display: none
+  }
+  #dynamicKneeVariationMeasurement{
+    display: none
+  }
+
+    .control-label {
+        text-align: right;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) { 
+  h1{
+    font-size: 18pt;
+}
+p{
+  font-size: 14pt;
+}
+#fs-logo{
+  width:150px;
+}
+.pill-button{
+  font-size: 14px; 
+}
+.end_session:before, .end_session:after {
+  height: 30px;
+}
+
+.logo-position{
+  top: -5px;
+}
+#indicators{
+  visibility: hidden;
+}
+#switchMeasurements{
+  display: block;
+}
+body { margin-bottom: 0px; }
+
+    
+.shoe-img-view{
+  height:600px;
+}
+    
+.directions {
+    font-size: 16pt;
+}
+    
+.shoe-carousel-img
+{
+    width: 565px;
+    height: 400px;
+    object-fit: scale-down;
+}
+.color-grid {
+    width: 80px;
+    height: 60px;
+    object-fit: scale-down;    
+}
+.add-bt-padding {
+padding-top: 250px;
+}
+    
+.lineText{
+  font-size:11pt
+}
+.lineTextHeader{
+  font-size:14pt
+}
+
+#measurementsHeader::before{
+  content:"3D MEASUREMENTS"
+}
+ 
+#pressureHeader::before{
+content:"PRESSURE INSIGHTS"
+}
+ 
+.carousel-inner-box{
+  height:500px;
+  width:100%;
+}
+    
+.measurementsCarousel{
+ /*  width:500px;
+   height:450px;*/
+ max-width: 800px;    
+  } 
+    
+.control-label {
+        text-align: right;
+    }
+    
+}
+
+
+
+
+
+
+
+@media (min-width: 992px) { 
+
+  h1{
+    font-size: 21pt;
+}
+p{
+  font-size: 16pt;
+}
+#fs-logo{
+  width:175px;
+}
+
+.end_session:before, .end_session:after {
+  height: 30px;
+}
+.pill-button{
+  font-size: 14px; 
+}
+
+.logo-position{
+  top: -5px;
+}
+#indicators{
+  visibility: hidden;
+}
+#switchMeasurements{
+  display: block;
+}
+body { margin-bottom: 0px;
+    }
+
+.control-label {
+    text-align: right;
+    }
+.directions {
+    font-size: 16pt;
+}
+    
+
+.shoe-img-view {
+  height:450px;
+}
+    
+#backArrow{
+    display:block
+  }
+  #forwardArrow{
+    display:block
+  }
+.lineText{
+  font-size:14pt;
+}
+.lineTextHeader{
+  font-size:18pt
+}
+carousel-inner-box{
+  height:450px;
+  width:100%;
+}
+ 
+#measurementsHeader::before{
+  content:"3D MEASUREMENTS"
+}
+ 
+#pressureHeader::before{
+content:"PRESSURE INSIGHTS";
+float: none;
+}
+}
+    
+
+
+
+ 
+
+

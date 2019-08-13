@@ -1,0 +1,257 @@
+ /* Web Based Retail Solution - Walk Scanning styles */
+
+
+.pressure-background {
+  min-width: 100%;
+  margin: 0 auto;
+  position:relative;
+  z-index: -10;
+  background-image: url("../images/pressure-gradiant.png");
+  background-repeat: repeat-x;
+}
+
+
+
+.ring-background {
+  min-width: 50px;
+  margin: 0 auto;
+  position:relative;
+  z-index: -10;
+  background-image: url("../images/ring-image");
+}
+
+
+
+
+@media (min-width: 0px) { 
+ 
+
+.ring-left{
+  height: 75px; 
+  position: absolute; 
+  top:0px;
+  right:0px;
+}
+.ring-right{
+  height: 75px; 
+  position: absolute; 
+  top:0px;
+  left:0px;
+}
+.ring-text-left{
+  z-index: 20; 
+  font-size: 18px; 
+  float: inherit; 
+  position: absolute; 
+  top:85px;
+  right: 25px;
+}
+.ring-text-right{
+  z-index: 20; 
+  font-size: 18px; 
+  float: inherit; 
+  position: absolute; 
+  top:85px;
+  left: 20px;
+}
+.left-ring-number{
+  z-index: 20; 
+  font-size: 40.5px;
+  float: inherit; 
+  position: absolute; 
+  top:5px;
+  right: 25px;
+}
+.right-ring-number{
+  z-index: 20; 
+  font-size: 40.5px;
+  float: inherit; 
+  position: absolute; 
+  top:5px;
+  left: 25px;
+}
+    .shoe-img-view{
+    height:250px;
+    }
+ 
+}
+
+
+
+
+@media (min-width: 575px) {
+ 
+  }
+  .ring-left{
+    height: 75px; 
+    position: absolute; 
+    top:0px;
+    right:45px;
+  }
+  .ring-right{
+    height: 75px; 
+    position: absolute; 
+    top:0px;
+    left:70px;
+  }
+  .ring-text-left{
+    z-index: 20; 
+    font-size: 18px; 
+    float: inherit; 
+    position: absolute; 
+    top:85px;
+    right: 65px;
+  }
+  .ring-text-right{
+    z-index: 20; 
+    font-size: 18px; 
+    float: inherit; 
+    position: absolute; 
+    top:85px;
+    left: 80px;
+  }
+  .left-ring-number{
+    z-index: 20; 
+    font-size: 40.5px;
+    float: inherit; 
+    position: absolute; 
+    top:5px;
+    right: 70px;
+  }
+  .right-ring-number{
+    z-index: 20; 
+    font-size: 40.5px;
+    float: inherit; 
+    position: absolute; 
+    top:5px;
+    left: 95px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) { 
+
+    
+.ring-left{
+  height: 100px; 
+  position: absolute; 
+  top:-40px;
+  right:45px;
+}    
+.ring-right{
+  height: 100px; 
+  position: absolute; 
+  top:-40px;
+  left:70px;
+}
+.ring-text-left{
+  z-index: 20; 
+  font-size: 24px; 
+  float: inherit; 
+  position: absolute; 
+  top:65px;
+  right: 65px;
+}
+.ring-text-right{
+  z-index: 20; 
+  font-size: 24px; 
+  float: inherit; 
+  position: absolute; 
+  top:65px;
+  left: 80px;
+}
+ 
+.left-ring-number{
+  z-index: 20; 
+  font-size: 54px;
+  float: inherit; 
+  position: absolute; 
+  top:-30px;
+  right: 80px;
+}
+    
+.right-ring-number{
+  z-index: 20; 
+  font-size: 54px;
+  float: inherit; 
+  position: absolute; 
+  top:-30px;
+  left: 105px;
+}
+    
+}
+
+
+
+
+
+
+
+@media (min-width: 992px) { 
+
+
+    
+.ring-left{
+  height: 100px; 
+  position: absolute; 
+  top:-30px;
+  right:0px;
+}
+.ring-right{
+  height: 100px; 
+  position: absolute; 
+  top:-30px;
+  left:0px;
+}
+.ring-text-left{
+  z-index: 20; 
+  font-size: 24px; 
+  float: inherit; 
+  position: absolute; 
+  top:75px;
+  right: 25px;
+}
+.ring-text-right{
+  z-index: 20; 
+  font-size: 24px; 
+  float: inherit; 
+  position: absolute; 
+  top:75px;
+  left: 20px;
+}
+ 
+.left-ring-number{
+  z-index: 20; 
+  font-size: 54px;
+  float: inherit; 
+  position: absolute; 
+  top:-20px;
+  right: 35px;
+}
+.right-ring-number{
+  z-index: 20; 
+  font-size: 54px;
+  float: inherit; 
+  position: absolute; 
+  top:-20px;
+  left: 35px;
+}
+
+}
+    
+
+
+
+ 
+
+

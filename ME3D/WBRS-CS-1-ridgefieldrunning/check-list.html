@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+    
+    <style>
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,700);
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 20px;
+  color: #435757;
+  background: linear-gradient(-20deg, #d0b782 20%, #a0cecf 80%);
+  font: 500 1.2em/1.2 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+  border-top: 5px solid #435757;
+  background-color: rgba(255, 255, 255, .2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  user-select: none;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, .4);
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  counter-reset: done-items undone-items;
+}
+
+h2 {
+  position: relative;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 1.2em;
+}
+
+h2::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: -20px;
+  width: 5px;
+  background-color: #435757;
+}
+
+h2::after {
+  display: block;
+  float: right;
+  font-weight: normal;
+}
+
+.done {
+  order: 1;
+}
+
+.done::after {
+  content: ' (' counter(done-items) ')';
+}
+
+.undone {
+  order: 3;
+}
+
+.undone::after {
+  content: ' (' counter(undone-items) ')';
+}
+
+/* hide inputs offscreen, but at the same vertical positions as the correpsonding labels, so that tabbing scrolls the viewport as expected */
+input[title=brands] {
+  display: block;
+  height: 53px;
+  margin: 0 0 -53px -9999px;
+  order: 4;
+  outline: none;
+  counter-increment: undone-items;
+}
+
+input[title=brands]:checked {
+  order: 2;
+  counter-increment: done-items;  
+}
+
+label[title=brands] {
+  display: block;
+  position: relative;
+  padding: 15px 0 15px 45px;
+  border-top: 1px dashed #fff;
+  order: 4;
+  cursor: pointer;
+  animation: undone .5s;
+}
+
+label[title=brands]::before {
+  content: '\f0c8'; /* circle outline */
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  font: 1.5em;
+  font-family: "Font Awesome 5 Free"; 
+}
+
+label[title=brands]:hover, input:focus + label {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+input[title=brands]:checked + label {
+  order: 2;
+  animation: done .5s;
+}
+
+input[title=brands]:checked + label::before {
+  content: '\f14a'; /* circle checkmark */
+}
+
+@keyframes done {
+  0% {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, .4);
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .4);
+  }
+}
+
+@keyframes undone {
+  0% {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, .4);
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, .4);
+  }
+}
+        
+        </style>
+    
+    </head>
+    
+
+
+
+<div class="container">
+<div class="items" title="brands">
+<input id="item1" type="checkbox" title="brands"><label title="brands" for="item1">Adidas</label>
+<input id="item2" type="checkbox" title="brands"><label title="brands" for="item2">Altra</label>
+<input id="item3" type="checkbox" title="brands"><label title="brands" for="item3">ASICS</label>
+<input id="item4" type="checkbox" title="brands"><label title="brands" for="item4">Brooks</label>
+<input id="item5" type="checkbox" title="brands"><label title="brands" for="item5">Diadora</label>
+<input id="item6" type="checkbox" title="brands"><label title="brands" for="item6">HOKA ONE ONE</label>
+<input id="item7" type="checkbox" title="brands"><label title="brands" for="item7">Diadora</label>
+<input id="item8" type="checkbox" title="brands"><label title="brands" for="item8">HOKA ONE ONE</label>
+<input id="item9" type="checkbox" title="brands"><label title="brands" for="item9">Inov-8</label>
+<input id="item10" type="checkbox" title="brands"><label title="brands" for="item10">Karhu</label>
+<input id="item11" type="checkbox" title="brands"><label title="brands" for="item11">MizunoMontrail</label>
+<input id="item12" type="checkbox" title="brands"><label title="brands" for="item12">New Balance</label>
+<input id="item13" type="checkbox" title="brands"><label title="brands" for="item13">Newton</label>
+<input id="item14" type="checkbox" title="brands"><label title="brands" for="item14">Nike</label>
+<input id="item15" type="checkbox" title="brands"><label title="brands" for="item15">On Running</label>
+<input id="item16" type="checkbox" title="brands"><label title="brands" for="item16">OOFOS</label>
+<input id="item17" type="checkbox" title="brands"><label title="brands" for="item17">Salomon</label>
+<input id="item18" type="checkbox" title="brands"><label title="brands" for="item18">Saucony</label>
+<input id="item19" type="checkbox" title="brands"><label title="brands" for="item19">Superfeet</label>
+<input id="item20" type="checkbox" title="brands"><label title="brands" for="item20">Under Armour </label>       
+<input id="item21" type="checkbox" title="brands"><label title="brands" for="item21">Reebok </label>
+<input id="item22" type="checkbox" title="brands"><label title="brands" for="item22">Salomon </label>
+<input id="item23" type="checkbox" title="brands"><label title="brands" for="item23">Saucony </label> 
+<input id="item24" type="checkbox" title="brands"><label title="brands" for="item24">Scarpa </label>
+<input id="item25" type="checkbox" title="brands"><label title="brands" for="item25">Scott </label>
+<input id="item26" type="checkbox" title="brands"><label title="brands" for="item26">SKECHERS </label> 
+<input id="item27" type="checkbox" title="brands"><label title="brands" for="item27">SKECHERS Performance </label>
+<input id="item28" type="checkbox" title="brands"><label title="brands" for="item28">Vasque </label>
+<input id="item29" type="checkbox" title="brands"><label title="brands" for="item29">Vibram FiveFingers </label>
+<input id="item30" type="checkbox" title="brands"><label title="brands" for="item30">Vivobarefoot </label> 
+<h2 class="done" title="brands" aria-hidden="true">Selected</h2>
+<h2 class="undone" title="brands" aria-hidden="true">Available</h2>
+</div>  
+</div>
